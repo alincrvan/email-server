@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/email-management?useSSL=true
+    username: root
+    password: root
+    ssl:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+values:
+  cron: "0 0 10 * * *"
+  spam: "carl@gbtec.com"
